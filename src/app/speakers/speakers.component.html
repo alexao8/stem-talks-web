@@ -1,0 +1,29 @@
+<div class="speakers-container">
+    <h2>Speakers</h2>
+    <div class="speakers-grid">
+      <div class="speaker" *ngFor="let speaker of speakers" (click)="openModal(speaker)">
+        <img [src]="speaker.image" alt="{{ speaker.name }}">
+        <div class="overlay">
+          <p>{{ speaker.name }}</p>
+          <p>{{ speaker.position }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div *ngIf="selectedSpeaker" class="modal" (click)="closeModal()">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <!-- Close Button (X) -->
+        <span class="close-btn" (click)="closeModal()">×</span>
+        <div class="modal-body">
+          <img [src]="selectedSpeaker.image" alt="{{ selectedSpeaker.name }}" class="modal-img">
+          <div class="modal-info">
+            <h3>{{ selectedSpeaker.name }}</h3>
+            <p><strong>{{ selectedSpeaker.position }}</strong></p>
+            <p>{{ selectedSpeaker.bio }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

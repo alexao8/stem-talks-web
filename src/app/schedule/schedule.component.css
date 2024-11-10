@@ -1,0 +1,91 @@
+/* Basic container styles */
+.schedule-container {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Time box */
+  .time-box {
+    background-color: #3082b9;  /* Slightly darker green */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-right: 15px; /* Space between time box and talk info */
+    flex-shrink: 0; /* Prevent time box from shrinking */
+    width: 100px;  /* Fixed width for time box */
+    text-align: center;
+  }
+  
+  /* Talk info styles */
+  .talk-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .talk-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .speaker-name {
+    font-size: 1.3rem;
+    color: #666;
+  }
+  
+  /* Dropdown summary styles */
+  .dropdown-summary {
+    overflow: hidden;
+    max-height: 0;  /* Initially hidden */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;  /* Slower transition */
+    opacity: 0;  /* Initially hidden */
+  }
+  
+  .dropdown-summary.open {
+    max-height: 500px;  /* Adjust this based on your content height */
+    opacity: 1;  /* Fully visible when opened */
+  }
+  
+  .dropdown-summary p {
+    margin: 10px 50px;
+    font-size: 18px;
+    color: #333;
+  }
+  

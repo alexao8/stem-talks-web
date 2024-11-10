@@ -1,0 +1,89 @@
+/* map.component.css */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main container: Set up two columns with no margin/padding */
+.map-container {
+  display: flex;
+  height: 100vh;  /* Ensure the map takes full height of the screen */
+  width: 100%;
+}
+
+/* Left column: Building info */
+.left-column {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-image: url('../../assets/back.jpeg');
+  background-size: cover; /* Ensures the image covers the whole area */
+  background-position: center center; /* Centers the background image */
+  height: 100%; /* Makes the background cover the whole viewport */
+  position: relative; /* To position the overlay and content correctly */
+}
+
+/* Dark overlay */
+.left-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); /* Dark overlay with 50% opacity */
+  z-index: 1; /* Overlay is above the background */
+}
+
+/* Ensures the content (text) is above the overlay */
+.left-column > * {
+  position: relative; /* Ensures the content is above the overlay */
+  z-index: 2;
+}
+
+/* Building title styling */
+.building-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Building address styling */
+.building-address {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Right column: Google map */
+.right-column {
+  flex: 1;
+  height: 100%;
+  padding: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .map-container {
+      flex-direction: column;  /* Stack columns vertically on small screens */
+  }
+
+  .left-column, .right-column {
+      flex: none;
+      width: 100%;  /* Take full width when stacked */
+      height: 50vh;  /* Half the screen height for each section */
+  }
+
+  iframe {
+      height: 50vh;  /* Adjust map height on small screens */
+  }
+}

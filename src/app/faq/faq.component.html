@@ -1,0 +1,13 @@
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+    <div *ngFor="let faq of faqs; let i = index" class="faq-item">
+      <div class="faq-question" (click)="toggleAnswer(i)">
+        <span>{{ faq.question }}</span>
+        <i class="arrow" [class.open]="isOpen[i]">↓</i>
+      </div>
+      <div [class.open]="isOpen[i]" class="faq-answer">
+        <p [innerHTML]="getSanitizedAnswer(faq.answer)"></p>
+      </div>
+    </div>
+  </div>
+  

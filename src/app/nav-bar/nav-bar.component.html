@@ -1,0 +1,25 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="../../assets/logo_gdg.png" alt="STEM Talks Menorca" style="width:240px;height:40px;">
+  </div>
+  
+  <!-- Toggle button for mobile view -->
+  <button class="toggle-button" (click)="toggleMenu()" aria-label="Toggle Navigation">
+    <span class="material-icons">menu</span>
+  </button>
+
+  <!-- Navbar links with anchors -->
+  <div class="nav-links" [ngClass]="{ 'active': isMenuOpen }">
+    <a (click)="scrollToSection('home')">Home</a>
+    <a (click)="scrollToSection('about')">About</a>
+    <a (click)="scrollToSection('speakers')">Ponentes</a>
+    <a (click)="scrollToSection('schedule')">Horario</a>
+    <a (click)="scrollToSection('map')">Mapa</a>
+    <a (click)="scrollToSection('gdg')">GDG Menorca</a>
+    <a (click)="scrollToSection('sponsors')">Sponsors</a>
+    <a (click)="scrollToSection('faq')">FAQs</a>
+
+  </div>
+</nav>

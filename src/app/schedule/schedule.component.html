@@ -1,0 +1,25 @@
+<div class="schedule-container">
+    <h2>Schedule</h2>
+  
+    <div *ngFor="let day of schedule; let dayIndex = index">
+      <h3>{{ day.day }}</h3>
+  
+      <div *ngFor="let talk of day.talks; let i = index">
+        <div class="dropdown">
+          <button class="dropdown-toggle" (click)="toggleSummary(dayIndex, i)">
+            <div class="time-box">{{ talk.time }}</div>
+            <div class="talk-info">
+              <div class="talk-title">{{ talk.title }}</div>
+              <div class="speaker-name">{{ talk.speaker }}</div>
+            </div>
+          </button>
+  
+          <!-- Dropdown Summary Section -->
+          <div class="dropdown-summary" [class.open]="day.isOpen[i]">
+            <p>{{ talk.summary }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
