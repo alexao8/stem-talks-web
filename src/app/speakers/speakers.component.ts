@@ -14,59 +14,60 @@ export class SpeakersComponent {
     { 
       name: 'Speaker 1', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/adrian.webp',
+      image:  'assets/unknown.jpg',
       bio: "bio1" 
     },
     { 
       name: 'Speaker 2', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/cynthia.jpg',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
      },
     { 
       name: 'Speaker 3', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/emilio.jpg',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
      },
     { 
       name: 'Speaker 4', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/juantomas.jpeg',
-      bio: "bio1" },
+      image: 'assets/unknown.jpg',
+      bio: "bio1" 
+    },
     { name: 'Speaker 5',
       position: 'Position 1', 
-      image: 'assets/speakers-2024/karina.png',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
       name: 'Speaker 6', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/luis.png',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
       name: 'Speaker 7', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/marta.jpg',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
       name: 'Speaker 8', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/marti.jpg',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
       name: 'Speaker 9', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/rosario.jpeg',
+      image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
       name: 'Speaker 10', 
       position: 'Position 1', 
-      image: 'assets/speakers-2024/speaker10.jpg', 
+      image: 'assets/unknown.jpg',
       bio: "bio1" 
     },
   ];

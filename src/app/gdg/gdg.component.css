@@ -25,8 +25,11 @@
   .left-column {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 0.5rem; /* Gap between logo, text, and icons */
+    text-align: center;
+    position: relative;
   }
   
   .gdg-logo {
@@ -157,4 +160,37 @@
     cursor: pointer;
     color: #333;
   }
-  
+
+.gdg-logo {
+  width: 400px;
+  height: auto;
+}
+
+/* Follow us text styling */
+.follow-us-text {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 400px; /* Aligns text width with GDG logo */
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0.8;
+}
+
+/* Style for each icon */
+.social-icon {
+  width: 50px; /* Adjust icon size as needed */
+  height: 50px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarges icon */
+}

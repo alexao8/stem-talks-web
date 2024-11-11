@@ -1,62 +1,29 @@
 <!-- gdg.component.html -->
 <div class="gdg-container">
-    <!-- División en 2 columnas (Foto y Texto) en la parte superior -->
-    <div class="top-row">
-      <!-- Columna izquierda: GDG logo -->
-      <div class="left-column">
-        <img src="assets/gdg-menorca-logo.jpg" alt="GDG Logo" class="gdg-logo" />
-      </div>
-  
-      <!-- Columna derecha: Texto de introducción -->
-      <div class="right-column">
-        <h2>Google Developer Group Menorca</h2>
-        <p>
-          El Google Developer Group (GDG) Menorca es una comunidad tecnológica en la isla dirigida a todo interesado, independientemente de la experiencia, en ciencia y tecnología. 
-          Nuestro objetivo es crear la mejor comunidad tecnológica trayendo tanto grandes eventos con increíbles ponentes, como el DevFest o las STEM Talks, como pequeños meetups para conocernos, crear lazos y fortalecer la comunidad. 
-          Si estás interesado en el mundo de la tecnología, con nosotros encontrarás charlas, talleres, discusiones, mesas redondas... ¡Y el espacio perfecto para aprender, conocer gente, involucrarte en la comunidad y disfrutar de la experiencia!
-          <br><br>
-          Disclaimer: GDG Menorca is an independent group; our activities and the opinions expressed on this website should in no way be linked to Google, the corporation.
-        </p>
+  <!-- División en 2 columnas (Foto y Texto) en la parte superior -->
+  <div class="top-row">
+    <!-- Columna izquierda: GDG logo -->
+    <div class="left-column">
+      <img src="assets/gdg-menorca-logo.jpg" alt="GDG Logo" class="gdg-logo" />
+      
+      <!-- Follow Us Text -->
+      <p class="follow-us-text">¡Síguenos para no perderte nada de GDG Menorca!</p>
+
+      <!-- Social icons row behind the logo -->
+      <div class="social-icons">
+        <img src="assets/twitter-icon.png" alt="Twitter" class="social-icon" />
+        <img src="assets/Instagram_icon.png" alt="Instagram" class="social-icon" />
+        <img src="assets/slack-icon.png" alt="Slack" class="social-icon" />
       </div>
     </div>
-  
-    <!-- Sección del equipo -->
-    <div class="team">
-      <h3>Team</h3>
-      <div class="team-members">
-        <!-- Miembro del equipo 1 -->
-        <div class="team-member" (click)="openModal(0)">
-          <img src="assets/organizers/Alex.jpg" alt="Alexandre Alemany Orfila" class="team-member-pic" />
-          <div class="team-info">
-            <p class="name">Alexandre Alemany Orfila</p>
-            <p class="position">Estudiante y Data Scientist</p>
-          </div>
-        </div>
-        
-        <!-- Miembro del equipo 2 -->
-        <div class="team-member" (click)="openModal(1)">
-          <img src="assets/organizers/Sergi.jpg" alt="Sergi Olives Orfila" class="team-member-pic" />
-          <div class="team-info">
-            <p class="name">Sergi Olives Orfila</p>
-            <p class="position">Team Lead & Scrum Master</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Modal Popup (oculto inicialmente) -->
-    <div *ngIf="isModalOpen" class="modal" (click)="closeModal()">
-      <div class="modal-content" (click)="$event.stopPropagation()">
-        <span class="close" (click)="closeModal()">&#x2715;</span>
-        <div class="modal-info">
-          <img [src]="selectedPerson.pic" alt="Foto de la persona" class="modal-pic" />
-          <div class="modal-text">
-            <h4>{{ selectedPerson.name }}</h4>
-            <p>{{ selectedPerson.position }}</p>
-            <p>{{ selectedPerson.bio }}</p>
-          </div>
-        </div>
-      </div>
+    
+    <!-- Columna derecha: Texto de introducción -->
+    <div class="right-column">
+      <h2>Google Developer Group Menorca</h2>
+      <p>
+        El Google Developer Group (GDG) Menorca es el grupo principal que organiza las STEM Talks Menorca y una comunidad tecnológica en la isla dirigida a todo interesado, independientemente de la experiencia, en ciencia y tecnología. Nuestro objetivo es crear la mejor comunidad tecnológica trayendo tanto grandes eventos con increíbles ponentes, como el DevFest o las STEM Talks, como pequeños meetups para conocernos, crear lazos y fortalecer la comunidad. Si estás interesado en el mundo de la tecnología, con nosotros encontrarás charlas, talleres, discusiones, mesas redondas... ¡Y el espacio perfecto para aprender, conocer gente, involucrarte en la comunidad y disfrutar de la experiencia!
+        <br><br>
+        Disclaimer: GDG Menorca is an independent group; our activities and the opinions expressed on this website should in no way be linked to Google, the corporation.      </p>
     </div>
   </div>
-  
+</div>
