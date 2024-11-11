@@ -12,61 +12,61 @@ import { CommonModule } from '@angular/common';
 export class SpeakersComponent {
   speakers = [
     { 
-      name: 'Speaker 1', 
-      position: 'Position 1', 
+      name: '¿Sabes', 
+      position: 'Quienes', 
       image:  'assets/unknown.jpg',
       bio: "bio1" 
     },
     { 
-      name: 'Speaker 2', 
-      position: 'Position 1', 
+      name: 'Son', 
+      position: 'Los', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
      },
     { 
-      name: 'Speaker 3', 
-      position: 'Position 1', 
+      name: 'Ponentes', 
+      position: 'del', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
      },
     { 
-      name: 'Speaker 4', 
-      position: 'Position 1', 
+      name: 'STEM', 
+      position: 'Talks', 
       image: 'assets/unknown.jpg',
       bio: "bio1" 
     },
-    { name: 'Speaker 5',
-      position: 'Position 1', 
+    { name: 'Menorca',
+      position: '2025?', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
-      name: 'Speaker 6', 
-      position: 'Position 1', 
+      name: 'Nosotros', 
+      position: 'Si', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
-      name: 'Speaker 7', 
-      position: 'Position 1', 
+      name: 'Pero', 
+      position: 'Aún', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
-      name: 'Speaker 8', 
-      position: 'Position 1', 
+      name: 'es', 
+      position: 'Pronto', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
-      name: 'Speaker 9', 
-      position: 'Position 1', 
+      name: 'Para', 
+      position: 'Ti', 
       image: 'assets/unknown.jpg',
       bio: "bio1"
     },
     { 
-      name: 'Speaker 10', 
-      position: 'Position 1', 
+      name: 'Ten', 
+      position: 'Paciencia ;)', 
       image: 'assets/unknown.jpg',
       bio: "bio1" 
     },

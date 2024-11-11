@@ -18,10 +18,10 @@ import { FooterComponent } from './footer/footer.component';
   template: `
     <app-nav-bar></app-nav-bar>
     <div class="fullscreen" id="home">
-      <h1 class="typing-text">{{ displayText }}</h1>
+      <h1 class="typing-text">{{ displayText }} Talks Menorca 2025</h1>
       <!-- Event details with fade-in effect -->
       <div *ngIf="showEventDetails" class="event-details">
-        <p>30 and 31 of January</p>
+        <p>30 y 31 de Enero</p>
         <p>Centre Bit Menorca</p>
       </div>
 
@@ -519,7 +519,7 @@ import { FooterComponent } from './footer/footer.component';
 })
 
 export class AppComponent implements OnInit {
-  words = ["SCIENCE", "TECHNOLOGY", "MATHEMATICS", "ENGINEERING", "STEM TALKS MENORCA 2025"];
+  words = ["SCIENCE", "TECHNOLOGY", "MATHEMATICS", "ENGINEERING", "STEM"];
   displayText = '';
   wordIndex = 0;
   letterIndex = 0;

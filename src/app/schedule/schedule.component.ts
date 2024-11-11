@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common'; // Import CommonModule for *ngIf
 export class ScheduleComponent implements OnInit {
   schedule = [
     {
-      day: 'Thursday 30th (afternoon)',
+      day: 'Jueves 30 (tarde)',
       talks: [
         {
           time: '17:15',
@@ -35,7 +35,7 @@ export class ScheduleComponent implements OnInit {
       isOpen: [false, false]  // Track the open state for each talk in this day
     },
     {
-      day: 'Friday 31st (morning)',
+      day: 'Viernes 31 (mañana)',
       talks: [
         {
           time: '10:00',
@@ -71,7 +71,7 @@ export class ScheduleComponent implements OnInit {
       isOpen: [false, false]  // Track the open state for each talk in this day
     },
     {
-      day: 'Friday 31st (afternoon)',
+      day: 'Viernes 31 (tarde)',
       talks: [
         {
           time: '17:15',
@@ -93,7 +93,7 @@ export class ScheduleComponent implements OnInit {
         },
         {
           time: '19:40',
-          title: 'Talk 10: TBA',
+          title: 'Talk Especial: TBA',
           speaker: 'Speaker: TBA',
           summary: '¡Solo podemos decirte que el final te va a dejar con la boca abierta!',
         },
