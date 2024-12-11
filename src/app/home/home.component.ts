@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   template: `
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <div class="title">
-    <h1> Divulgación STEM en comunidad </h1>
+    <h1>Divulgación STEM en comunidad</h1>
   </div>
   <div class="container">
     <div class="column video-column">
@@ -20,13 +20,14 @@ import { CommonModule } from '@angular/common';
         El 30 y 31 de enero nos volvemos a ver en el Centre Bit Menorca para celebrar el STEM Talks Menorca. Un evento relacionado con el mundo STEM (Science, Technology, Engineering, Mathematics) con el objetivo de la divulgación científico-técnica y que se encuentra en su 8a edición. siete ediciones dedicadas a unas jornadas con la ciencia y la tecnología como protagonista preceden la de este año donde nos podremos volver a juntar en comunidad. Un evento de dos días, 30 y 31 de enero, donde volveremos a vernos y disfrutaremos de conferencias de grandes profesionales en la tecnología y la ciencia dirigidas a cualquier interesado en la materia con un objetivo claro: aprender en comunidad.
       </p>
       <p>
-        STEM Talks Menorca es un evento totalmente gratuito e inclusivo que te acercará a cuestiones actuales de la tecnología dadas por grandes exponentes que vienen de diferentes puntos de España y que son expertos en sus campos. Temas como inteligencia artificial, computación cuántica, realidad virtual, biociencias... Diferentes ponentes de instituciones tanto públicas como privadas nos llevarán un evento de calidad que se podrá disfrutar en versión híbrida  tanto en directo desde youtube como presencial desde el Centre Bit Menorca.
+        STEM Talks Menorca es un evento totalmente gratuito e inclusivo que te acercará a cuestiones actuales de la tecnología dadas por grandes exponentes que vienen de diferentes puntos de España y que son expertos en sus campos. Temas como inteligencia artificial, computación cuántica, realidad virtual, biociencias... Diferentes ponentes de instituciones tanto públicas como privadas nos llevarán un evento de calidad que se podrá disfrutar en versión híbrida tanto en directo desde youtube como presencial desde el Centre Bit Menorca.
       </p>
     </div>
   </div>
 
   <div class="countdown">
-  <p>{{ days }}d {{ hours }}h {{ minutes }}m {{ seconds }}s para el STEM Talks Menorca</p> 
+    <p *ngIf="!countdownFinished">{{ days }}d {{ hours }}h {{ minutes }}m {{ seconds }}s para el STEM Talks Menorca</p> 
+    <p *ngIf="countdownFinished">¡STEM Talks Menorca ha comenzado, sigue el evento en directo!</p>
   </div>
   `,
   styleUrls: ['./home.component.css']
@@ -42,13 +43,16 @@ export class HomeComponent implements OnInit {
   minutes: number = 0;
   seconds: number = 0;
 
+  // Flag to check if the countdown is finished
+  countdownFinished: boolean = false;
+
   ngOnInit() {
     this.startCountdown();
   }
 
   // Method to initialize the countdown
   startCountdown() {
-    setInterval(() => {
+    const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = this.targetDate.getTime() - now;
 
@@ -57,8 +61,11 @@ export class HomeComponent implements OnInit {
         this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        this.countdownFinished = false; // Ensure countdown is active
       } else {
         this.days = this.hours = this.minutes = this.seconds = 0; // Reset to zero when the countdown ends
+        this.countdownFinished = true; // Set to true when countdown finishes
+        clearInterval(interval); // Stop the countdown when the event has started
       }
     }, 1000); // Update every second
   }

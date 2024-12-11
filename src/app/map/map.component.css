@@ -87,3 +87,22 @@ iframe {
       height: 50vh;  /* Adjust map height on small screens */
   }
 }
+
+.get-tickets-button {
+  background-color: #3082b9; /* Color for the button */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none; /* Remove underline */
+}
+
+.get-tickets-button:hover {
+  background-color: #1d5f80; /* Darker shade on hover */
+}

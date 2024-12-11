@@ -15,21 +15,21 @@ export class ScheduleComponent implements OnInit {
       talks: [
         {
           time: '17:15',
-          title: 'Talk 1: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'Not yet...',
+          title: 'Deja de hablar con bots: identidad digital y el futuro de las plataformas',
+          speaker: 'Maria Teresa Nieto',
+          summary: '¿Cuántas cuentas falsas se esconden en tus redes sociales o en las reseñas de tus productos favoritos? La teoría del "internet muerto" dice que los bots ya dominan buena parte de la red, influyendo en conversaciones, decisiones y compras. En esta charla vamos a hablar de por qué los bots se han vuelto un problema tan grande, cómo afectan nuestra experiencia en línea y por qué la identidad digital, junto con soluciones como el KYC (Know Your Customer), podría ser la herramienta clave para frenarlos',
         },
         {
           time: '18:05',
-          title: 'Talk 2: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'Sabemos que quieres saberlo...',
+          title: 'Salvando vidas con Inteligencia Artificial',
+          speaker: 'Ana Freire',
+          summary: 'En esta charla presentaremos los avances del proyecto STOP (Suicide prevenTion in sOcial Platforms), que utiliza inteligencia artificial para ayudar a usuarios con problemas de salud mental en redes sociales. Veremos cómo el conocimiento experto humano se utiliza para entrenar algoritmos de aprendizaje automático que aprenden a detectar riesgo de ideación suicida, depresión o trastornos de la conducta alimentaria. El resultado de estos algoritmos es utilizado para configurar campañas dirigidas a usuarios en riesgo, ofreciendo ayuda a través de teléfonos o chats gratuitos de apoyo emocional. La última campaña multiplicó x10 el número de chats recibidos en el chat de la Fundació Esperança en Línea.',
         },
         {
           time: '18:55',
           title: 'Talk 3: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'Pero aún es pronto ;)',
+          speaker: 'Jorge del Casar',
+          summary: 'Rseumen: TBA',
         },
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
@@ -39,15 +39,15 @@ export class ScheduleComponent implements OnInit {
       talks: [
         {
           time: '10:00',
-          title: 'Talk 4: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'Tampoco encontrarás nada aquí...',
+          title: 'Entra a la màquina del temps amb les biociències',
+          speaker: 'Cristina Maria Pereira dos Santos',
+          summary: 'Les restes esquelètiques recuperades en diferents contextos ens desvetllen informació sorprenent sobre les poblacions passades. Qui eren, com eren, d’on venien, quines malalties han patit o de que s’han mort, són algunes de les preguntes que podem respondre amb estudis morfològics, histològics i (paleo)genòmics ben farcits de bioinformàtica. En aquesta xerrada us convidem a viatjar pel passat fins arribar a fa més de 2000 anys!',
         },
         {
           time: '10:30',
-          title: 'Talk 5: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'No insistas...',
+          title: "inLab FIB: un espai per a la innovació a la Facultat d'Informàtica de Barcelona (FIB) de la UPC",
+          speaker: 'Ernest Teniente',
+          summary: "L'inLab FIB és el laboratori d'innovació i recerca de la Facultat d'Informàtica de Barcelona (FIB) de la UPC i la seva missió és la d'innovar i transferir coneixement a la societat en l'àmbit de les tecnologies de la informació mitjançant el desenvolupament del talent humà i la realització de projectes innovadors i multidisciplinaris. En aquesta xerrada s'oferirà una visió general d'alguns projectes desenvolupats a l'inLab FIB per demostrar com la innovació és la clau per millorar i transformar la societat i com la tecnologia, especialment la informàtica, és la base principal sobre la que pivota actualment aquesta transformació",
         },
         {
           time: '11:00',
@@ -57,15 +57,15 @@ export class ScheduleComponent implements OnInit {
         },
         {
           time: '11:20',
-          title: 'Talk 6: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'No habrá filtraciones antes de tiempo...',
+          title: 'Realitat o ficció? Descobrint els secrets dels deepfakes',
+          speaker: 'Gabriel Moyà',
+          summary: "En aquesta xerrada, explorarem el món dels deepfakes, una tecnologia que utilitza la intel·ligència artificial per generar imatges i vídeos realistes de persones que, en realitat, mai no han existit o fet el que veiem. Descobrirem com funciona aquesta tecnologia, els processos de creació d’imatges humanes falses i quins són els límits entre la realitat i la ficció digital. A més, veurem com aquests avenços en IA generativa han fet que distingir el real del fals sigui cada vegada més complicat i les implicacions ètiques que se'n deriven.",
         },
         {
           time: '11:50',
           title: 'Talk 7: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'Pero estamos contentos que tengas tantas ganas de saber de que irán las ponencias :D',
+          speaker: 'Nerea Luis',
+          summary: 'Resumen: TBA',
         },
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
@@ -75,27 +75,27 @@ export class ScheduleComponent implements OnInit {
       talks: [
         {
           time: '17:15',
-          title: 'Talk 8: TBA',
-          speaker: 'Speaker: TBA',
-          summary: '¡Hola de nuevo! Como puedes ver aún no hemos anunciado a charla :D',
+          title: "Orquestrant la Intel·ligència: Alliberant el Poder dels Sistemes d'IA de Múltiples Agents",
+          speaker: 'Albert Solana',
+          summary: "Aquesta xerrada explora el potencial transformador dels agents d'IA en l'orquestració d'estratègies basades en dades, un camp en creixement que permet a les empreses navegar per operacions complexes i dinàmiques de mercat. Albert Solana, cofundador de Mindsight Ventures i expert en sistemes de múltiples agents, parlarà de la integració de la IA per al processament de dades en temps real, l'anàlisi predictiva i les interaccions personalitzades amb els usuaris. La xerrada examinarà aplicacions reals dels agents d'IA en els negocis i les perspectives del desenvolupament de Nexus, una nova plataforma per a la gestió dinàmica de dades i l'automatització de fluxos de treball.",
         },
         {
           time: '18:05',
-          title: 'Talk 9: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'La paciencia es la madre de la ciencia...',
+          title: 'Tengo un ordenador cuántico. ¿Y ahora qué?',
+          speaker: 'Ana Palacios',
+          summary: 'La computación cuántica nos brinda la oportunidad de resolver problemas (es decir, computar) a partir de unas reglas del juego distintas. En concreto, algo más locas. Esto hace que la forma de pedirle a un ordenador cuántico que haga algo (es decir, escribir un programa o algoritmo) sea bastante distinta de cómo se lo pides a tu portátil. En esta charla veremos los elementos clave de la física cuántica que condicionan este hecho, así como la pinta que tienen susodichos algoritmos cuánticos. Acabaremos hablando de las principales aplicaciones de la computación cuántica y el impacto que tendrán (y están teniendo) estas tecnologías en la sociedad.',
         },
         {
           time: '18:55',
-          title: 'Talk 10: TBA',
-          speaker: 'Speaker: TBA',
-          summary: 'A poquet a poquet, es fa es caminet!',
+          title: 'Copilotos para el futuro',
+          speaker: 'Nerea Luis',
+          summary: 'Resumen: TBA'
         },
         {
           time: '19:40',
-          title: 'Talk Especial: TBA',
+          title: 'Neworking y talk especial: TBA',
           speaker: 'Speaker: TBA',
-          summary: '¡Solo podemos decirte que el final te va a dejar con la boca abierta!',
+          summary: '¡Solo podemos decirte que el final te va a encantar!',
         },
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
