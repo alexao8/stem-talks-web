@@ -65,9 +65,9 @@ export class SpeakersComponent {
       bio: "Ana Palacios estudió Física en la Universidad Complutense de Madrid. Acabó la carrera enamorada de la cuántica pero con curiosidad por profundizar en transiciones de fase, teoría de la información y en computación, por lo que realizó el máster en Física de los Sistemas Complejos del Instituto de Física Interdisciplinar y de los Sistemas Complejos (IFISC) y la Universidad de las Islas Baleares (UIB). Actualmente está haciendo un doctorado industrial con Qilimanjaro en la Universidad de Barcelona sobre el modelo analógico de computación cuántica, desarrollando tanto la teoría fundamental como aplicaciones dentro de este paradigma."
     },
     { 
-      name: 'Ten', 
-      position: 'Paciencia ;)', 
-      image: 'assets/unknown.jpg',
+      name: 'Santiago Barro Caules', 
+      position: 'Fundador y Gerente de Binary Menorca S.L.', 
+      image: 'assets/speakers-2025/tiago.jpg',
       bio: "bio1" 
     },
   ];

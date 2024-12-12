@@ -11,6 +11,36 @@ import { CommonModule } from '@angular/common'; // Import CommonModule for *ngIf
 export class ScheduleComponent implements OnInit {
   schedule = [
     {
+      day: 'Jueves 30 (Mañana) - Meetup #3 GDG Menorca',
+      talks: [
+        {
+          time: '9:30',
+          title: 'TBA',
+          speaker: 'Ernest Teniente',
+          summary: 'TBA',
+        },
+        {
+          time: '10:00',
+          title: 'Rediseñando Matrix con IA',
+          speaker: 'Santiago Barro',
+          summary: 'En esta charla exploraremos el impacto filosófico y práctico de la inteligencia artificial en el ámbito de la programación. Reflexionaremos sobre preguntas clave: ¿nos hace la IA más productivos o dependientes? ¿Estamos delegando nuestra capacidad de pensar a las máquinas o estas nos están ayudando a explorar nuevas fronteras intelectuales? \n Analizaremos cómo herramientas como ChatGPT o Github Copilot están transformando el trabajo del programador, desde la resolución de problemas hasta la creatividad en el código, y debatiremos sobre los temores comunes: ¿nos quitará la IA el trabajo? \n Con un enfoque filosófico, pero aterrizado en ejemplos prácticos, la charla invita a los programadores a pensar críticamente sobre su rol en un futuro compartido con la inteligencia artificial. ¿Estamos en una revolución que nos empodera, o en un proceso que nos redefine como meros supervisores de algoritmos?',
+        },
+        {
+          time: '10:30',
+          title: 'Descanso y desayuno',
+          speaker: '',
+          summary: 'Se ofrecerá desayuno a los asistentes',
+        },
+        {
+          time: '11:00',
+          title: 'Open Space',
+          speaker: '',
+          summary: 'A raíz de las charlas escuchadas y de temas que vayan surgiendo, tendremos un espacio de discusión donde se podrá hablar tanto de actualidad en la tecnología como de la comunidad y sus intereses para futuras activdades.',
+        },
+      ],
+      isOpen: [false, false]  // Track the open state for each talk in this day
+    },
+    {
       day: 'Jueves 30 (tarde)',
       talks: [
         {
@@ -66,6 +96,12 @@ export class ScheduleComponent implements OnInit {
           title: 'Talk 7: TBA',
           speaker: 'Nerea Luis',
           summary: 'Resumen: TBA',
+        },
+        {
+          time: '12:20',
+          title: 'Mesa redonda de estudiantes universitarios',
+          speaker: 'Estudiantes de diversas carreras STEM',
+          summary: 'En esta informal mesa redonda se podrá discutir de como son los estudios en la universidad, que experiencias han vivido los estudiantes, que retos han encontrado... Además, los asistentes podrán interrumpir y preguntar sus preguntas a los miembros de la mesa para hacerlo más dinámico.',
         },
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day

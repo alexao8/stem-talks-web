@@ -79,7 +79,7 @@
     align-items: center;
     justify-content: flex-start;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
   }
   
@@ -92,14 +92,14 @@
   }
   
   .modal-img {
-    width: 300px;
+    width: 400px;
     height: auto;
     max-width: 100%;
     margin-right: 2rem;
   }
   
   .modal-info {
-    max-width: 400px;
+    max-width: 800px;
     font-size: 1rem;
     line-height: 1.5;
   }

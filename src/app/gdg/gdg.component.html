@@ -27,3 +27,41 @@
     </div>
   </div>
 </div>
+
+<div class="team">
+  <h3>Team</h3>
+  <div class="team-members">
+    <!-- Miembro del equipo 1 -->
+    <div class="team-member" (click)="openModal(0)">
+      <img src="assets/organizers/Alex.jpg" alt="Alexandre Alemany Orfila" class="team-member-pic" />
+      <div class="team-info">
+        <p class="name">Alexandre Alemany Orfila</p>
+        <p class="position">Estudiante y Data Scientist</p>
+      </div>
+    </div>
+    
+    <!-- Miembro del equipo 2 -->
+    <div class="team-member" (click)="openModal(1)">
+      <img src="assets/organizers/Sergi.jpg" alt="Sergi Olives Orfila" class="team-member-pic" />
+      <div class="team-info">
+        <p class="name">Sergi Olives Orfila</p>
+        <p class="position">Team Lead & Scrum Master</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Popup (oculto inicialmente) -->
+<div *ngIf="isModalOpen" class="modal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closeModal()">&#x2715;</span>
+    <div class="modal-info">
+      <img [src]="selectedPerson.pic" alt="Foto de la persona" class="modal-pic" />
+      <div class="modal-text">
+        <h4>{{ selectedPerson.name }}</h4>
+        <p>{{ selectedPerson.position }}</p>
+        <p>{{ selectedPerson.bio }}</p>
+      </div>
+    </div>
+  </div>
+</div>
