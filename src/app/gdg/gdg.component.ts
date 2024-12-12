@@ -25,7 +25,7 @@ export class GdgComponent {
       name: 'Sergi Olives Orfila',
       position: 'Team Lead & Scrum Master en Merkle',
       pic: 'assets/organizers/Sergi.jpg',
-      bio: 'Team Lead de un equipo de desarrollo web para Sky TV. \n Amante del baloncesto.'
+      bio: 'Soy Sergi, organizador de GDG Menorca desde julio del 2024, desarrollador de aplicaciones web y personas, y amante de la tecnología y como la usamos para resolver problemas del día a día.'
     }
   ];
 
