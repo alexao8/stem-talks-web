@@ -129,7 +129,7 @@ export class ScheduleComponent implements OnInit {
         },
         {
           time: '19:40',
-          title: 'Neworking y talk especial: TBA',
+          title: 'Networking y talk especial: TBA',
           speaker: 'Speaker: TBA',
           summary: '¡Solo podemos decirte que el final te va a encantar!',
         },
