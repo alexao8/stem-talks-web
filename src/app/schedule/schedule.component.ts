@@ -57,9 +57,9 @@ export class ScheduleComponent implements OnInit {
         },
         {
           time: '18:55',
-          title: 'Talk 3: TBA',
+          title: 'Empower your frontend development with Web Components',
           speaker: 'Jorge del Casar',
-          summary: 'Rseumen: TBA',
+          summary: 'En esta charla haremos una breve introducción a los web components y cómo estos pueden mejorar la Experiencia de Usuario y unificar la Interfaz de Usuario. Iremos desde ejemplos simples de composición hasta ejemplos complejos con inyección de dependencias para integrarlos en arquitecturas hexagonales o modificar su funcionamiento según dónde los incorporemos. En resumen, un recorrido completo sobre las bases de los web components hasta cómo implementar i18n, signals, context. Todo lo que necesitas saber para empezar a incorporar web components en tus interfaces de usuario.',
         },
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
