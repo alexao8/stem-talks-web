@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule for *ngIf
+import { CommonModule } from '@angular/common';
+import { BotonEntradasComponent } from '../shared/boton-entradas/boton-entradas.component';
 
 @Component({
   selector: 'app-schedule',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BotonEntradasComponent],
   templateUrl: './schedule.component.html',
   styleUrls: ['./schedule.component.css']
 })
@@ -13,6 +14,11 @@ export class ScheduleComponent implements OnInit {
     {
       day: 'Jueves 30 (Mañana) - Meetup #3 GDG Menorca',
       talks: [
+        {
+          time: '9:15',
+          title: 'Abertura de puertas para el Meetup de GDG Menorca',
+          summary: 'Bienvenida de los organizadores y presentación del Meetup de GDG Menorca',
+        },
         {
           time: '9:30',
           title: 'TBA',
@@ -37,6 +43,11 @@ export class ScheduleComponent implements OnInit {
           speaker: '',
           summary: 'A raíz de las charlas escuchadas y de temas que vayan surgiendo, tendremos un espacio de discusión donde se podrá hablar tanto de actualidad en la tecnología como de la comunidad y sus intereses para futuras activdades.',
         },
+        {
+          time: '12:30',
+          title: 'Cierre de la jornada',
+          summary: 'Cierre de la jornada y agradecimiento a los organizadores y colaboradores.',
+        },
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
     },
@@ -44,6 +55,10 @@ export class ScheduleComponent implements OnInit {
       day: 'Jueves 30 (tarde)',
       talks: [
         {
+          time: '17:00',
+          title: 'Bienvenida a STEM Talks 2025',
+          summary: 'Bienvenida de los organizadores y presentación de la conferencia STEM Talks 2025',
+        },{
           time: '17:15',
           title: 'Deja de hablar con bots: identidad digital y el futuro de las plataformas',
           speaker: 'Maria Teresa Nieto',
@@ -61,12 +76,22 @@ export class ScheduleComponent implements OnInit {
           speaker: 'Jorge del Casar',
           summary: 'En esta charla haremos una breve introducción a los web components y cómo estos pueden mejorar la Experiencia de Usuario y unificar la Interfaz de Usuario. Iremos desde ejemplos simples de composición hasta ejemplos complejos con inyección de dependencias para integrarlos en arquitecturas hexagonales o modificar su funcionamiento según dónde los incorporemos. En resumen, un recorrido completo sobre las bases de los web components hasta cómo implementar i18n, signals, context. Todo lo que necesitas saber para empezar a incorporar web components en tus interfaces de usuario.',
         },
+        {
+          time: '19:30',
+          title: 'Sesión de Networking y cierre de la jornada',
+          summary: 'Cierre de la jornada y agradecimiento a los organizadores y colaboradores. Se ofrecerá una sesión de networking para que los asistentes puedan conocerse y hablar sobre sus intereses y proyectos.',
+        }
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
     },
     {
       day: 'Viernes 31 (mañana)',
       talks: [
+        {
+          time: '17:00',
+          title: 'Abertura de puertas',
+          summary: 'Bienvenida de los organizadores y presentación de la sesión de mañana',
+        },
         {
           time: '10:00',
           title: 'Entra a la màquina del temps amb les biociències',
@@ -103,6 +128,11 @@ export class ScheduleComponent implements OnInit {
           speaker: 'Estudiantes de diversas carreras STEM',
           summary: 'En esta informal mesa redonda se podrá discutir de como son los estudios en la universidad, que experiencias han vivido los estudiantes, que retos han encontrado... Además, los asistentes podrán interrumpir y preguntar sus preguntas a los miembros de la mesa para hacerlo más dinámico.',
         },
+        {
+          time: '13:00',
+          title: 'Cierre de la jornada',
+          summary: 'Cierre de la jornada y agradecimiento a los organizadores y colaboradores.',
+        }
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
     },
@@ -129,10 +159,14 @@ export class ScheduleComponent implements OnInit {
         },
         {
           time: '19:40',
-          title: 'Networking y talk especial: TBA',
+          title: 'Talk especial: TBA',
           speaker: 'Speaker: TBA',
           summary: '¡Solo podemos decirte que el final te va a encantar!',
-        },
+        },{
+          time: '20:15',
+          title: 'Nos vemos en el STEM Talks 2026',
+          summary: 'Cierre de la jornada y agradecimiento a los organizadores y colaboradores. Se ofrecerá una sesión de networking para que los asistentes puedan conocerse y hablar sobre sus intereses y proyectos.',
+        }
       ],
       isOpen: [false, false]  // Track the open state for each talk in this day
     }
