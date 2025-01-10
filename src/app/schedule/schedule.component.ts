@@ -88,7 +88,7 @@ export class ScheduleComponent implements OnInit {
       day: 'Viernes 31 (mañana)',
       talks: [
         {
-          time: '17:00',
+          time: '9:45',
           title: 'Abertura de puertas',
           summary: 'Bienvenida de los organizadores y presentación de la sesión de mañana',
         },
@@ -139,6 +139,11 @@ export class ScheduleComponent implements OnInit {
     {
       day: 'Viernes 31 (tarde)',
       talks: [
+        {
+          time: '17:00',
+          title: 'Abertura de puertas',
+          summary: 'Bienvenida de los organizadores y presentación de la sesión de tarde',
+        },
         {
           time: '17:15',
           title: "Orquestrant la Intel·ligència: Alliberant el Poder dels Sistemes d'IA de Múltiples Agents",
