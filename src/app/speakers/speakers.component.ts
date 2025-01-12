@@ -68,7 +68,7 @@ export class SpeakersComponent {
       name: 'Santiago Barro Caules', 
       position: 'Fundador y Gerente de Binary Menorca S.L.', 
       image: 'assets/speakers-2025/tiago.jpg',
-      bio: "bio1" 
+      bio: "Sóc Ingenier Tècnic en Informàtica de Sistemes i emprenedor. Vaig fundar Binary Menorca, empresa que dirigeixo actualment. Participo activament en el sector tecnològic balear formant part del Comitè Executiu de Turistec i havent presidit ACCESO. A més, col·laboro amb es Diari Menorca divulgant la tecnologia.  Al llarg de la meva carrera he rebut diversos premis, com ara: Millor Producte d'Innovació Tecnològica Balear 2007 (Govern Balear), Millor Empresa Jove 2007 (PIME), Millor Jove Empresari Menorca 2009 (Joves Empresaris). Vaig ser finalista del Concurs Nacional 'The Cloud Master' 2011 (Microsoft) i del premi Dircom Ramón del Corral 2023 (Dircom). Apassionat per la IA,  estic cursant un Màster en aquest camp a Founderz." 
     },
   ];
 
