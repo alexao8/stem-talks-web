@@ -21,15 +21,15 @@ export class ScheduleComponent implements OnInit {
         },
         {
           time: '9:30',
-          title: 'TBA',
-          speaker: 'Ernest Teniente',
-          summary: 'TBA',
-        },
-        {
-          time: '10:00',
           title: 'Rediseñando Matrix con IA',
           speaker: 'Santiago Barro',
           summary: 'En esta charla exploraremos el impacto filosófico y práctico de la inteligencia artificial en el ámbito de la programación. Reflexionaremos sobre preguntas clave: ¿nos hace la IA más productivos o dependientes? ¿Estamos delegando nuestra capacidad de pensar a las máquinas o estas nos están ayudando a explorar nuevas fronteras intelectuales? \n Analizaremos cómo herramientas como ChatGPT o Github Copilot están transformando el trabajo del programador, desde la resolución de problemas hasta la creatividad en el código, y debatiremos sobre los temores comunes: ¿nos quitará la IA el trabajo? \n Con un enfoque filosófico, pero aterrizado en ejemplos prácticos, la charla invita a los programadores a pensar críticamente sobre su rol en un futuro compartido con la inteligencia artificial. ¿Estamos en una revolución que nos empodera, o en un proceso que nos redefine como meros supervisores de algoritmos?',
+        },
+        {
+          time: '10:00',
+          title: 'TBA',
+          speaker: 'Ernest Teniente',
+          summary: 'TBA',
         },
         {
           time: '10:30',
