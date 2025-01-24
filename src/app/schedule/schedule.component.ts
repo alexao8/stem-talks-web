@@ -60,9 +60,9 @@ export class ScheduleComponent implements OnInit {
           summary: 'Bienvenida de los organizadores y presentación de la conferencia STEM Talks 2025',
         },{
           time: '17:15',
-          title: 'Deja de hablar con bots: identidad digital y el futuro de las plataformas',
-          speaker: 'Maria Teresa Nieto',
-          summary: '¿Cuántas cuentas falsas se esconden en tus redes sociales o en las reseñas de tus productos favoritos? La teoría del "internet muerto" dice que los bots ya dominan buena parte de la red, influyendo en conversaciones, decisiones y compras. En esta charla vamos a hablar de por qué los bots se han vuelto un problema tan grande, cómo afectan nuestra experiencia en línea y por qué la identidad digital, junto con soluciones como el KYC (Know Your Customer), podría ser la herramienta clave para frenarlos',
+          title: 'Per què vull un ordinador quàntic?',
+          speaker: 'Alex Alemany',
+          summary: 'A aquesta xerrada divulgativa explorarem, des dels camps de comptabilitat i complexitat computacional, perquè un ordinador quàntic pot ser útil i solucionar problemes que ara mateix no podem. Veurem la teoria que explica perquè ens pot ajudar i les limitacions que ens trobem a la pràctica. Veurem com classifiquen els problemes els informàtics segons la seva complexitat i com ens limita el tipus de computació que fem servir per aquests problemes.',
         },
         {
           time: '18:05',
